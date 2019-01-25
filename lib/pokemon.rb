@@ -19,7 +19,7 @@ class Pokemon
   end
   
   def self.find
-    
+    db.execute("SELECT id FROM pokemon ")
   
   end
 end
