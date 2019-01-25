@@ -20,11 +20,7 @@ class Pokemon
   
   def self.find (id, db)
       pokemon = db.execute("SELECT * FROM pokemon WHERE id =?", id)
-            pokemon.each do |items|
-              pokemon.index = items[0]
-              pokemon.name = items[1]
-              pokemon.type = items[2]
-              
+            self.new()
         
         
         binding.pry
