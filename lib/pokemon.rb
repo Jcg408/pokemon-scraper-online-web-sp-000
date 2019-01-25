@@ -19,7 +19,7 @@ class Pokemon
   end
   
   def self.find (id, db)
-      db.execute("SELECT * FROM pokemon WHERE id =?", id).flatten.each do |items|
+      db.execute("SELECT * FROM pokemon WHERE id =?", id).each do |items|
         binding.pry
         
       end
