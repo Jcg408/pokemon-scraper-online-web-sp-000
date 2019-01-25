@@ -19,9 +19,14 @@ class Pokemon
   end
   
   def self.find (id, db)
-      db.execute("SELECT * FROM pokemon WHERE id =?", id).each do |items|
-        @id = items[0]
-        @name
+      pokemon = db.execute("SELECT * FROM pokemon WHERE id =?", id)
+            pokemon.each do |items|
+              pokemon.index = items[0]
+              pokemon.name = items[1]
+              pokemon.type = items[2]
+              
+        
+        
         binding.pry
         
       end
