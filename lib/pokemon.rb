@@ -22,6 +22,6 @@ class Pokemon
       pokemon = db.execute("SELECT * FROM pokemon WHERE id =?", id).flatten
       
       self.new(id: pokemon[0], name: pokemon[1], type: pokemon[2], db: db)
-        binding.pry
+        # binding.pry
     end
 end
