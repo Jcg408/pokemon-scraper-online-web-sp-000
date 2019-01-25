@@ -25,8 +25,5 @@ class Pokemon
         
         binding.pry
         
-      end
-    # binding.pry
- 
-  end
+    end
 end
